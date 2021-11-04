@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-let initialAccounts = []
+let initialAccounts = [{ 'id': parseInt(Math.random() * 10), 'name': "payload", 'mobile': 5454545 }]
 const accountsSlice = createSlice({
     name: "account",
     initialState: {
