@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-let initialAccounts = [{ 'id': parseInt(Math.random() * 10), 'name': "payload", 'mobile': 5454545 }]
+let initialAccounts = []
 const accountsSlice = createSlice({
     name: "account",
     initialState: {
@@ -22,8 +22,10 @@ const accountsSlice = createSlice({
         removeAccount: (state, { payload }) => {
             console.log("pay load is: " + payload)
             console.log(state)
+            const alo = []
+            const aa = alo.concat(state.value)
             const ba = state.value.filter((values, payload) => payload !== values.id)
-            console.log("ba is : " + ba)
+            console.log("ba is : " + aa)
 
 
         },
